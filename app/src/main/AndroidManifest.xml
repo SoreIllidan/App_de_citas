@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pruebat2moviles">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.PruebaT2Moviles"
+        android:supportsRtl="true">
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".InicioActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false"
+            android:parentActivityName=".InicioActivity" />
+        <activity
+            android:name=".RecuperarActivity"
+            android:exported="false"
+            android:parentActivityName=".InicioActivity" />
+        <activity
+            android:name=".ValidarCodigoActivity"
+            android:exported="false"
+            android:parentActivityName=".InicioActivity" />
+        <activity
+            android:name=".CambiarPasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".InicioActivity" />
+
+
+        <activity
+            android:name=".PrincipalPacienteActivity"
+            android:exported="false"
+            android:parentActivityName=".InicioActivity" />
+        <activity
+            android:name=".MisCitasActivity"
+            android:exported="false"
+            android:parentActivityName=".PrincipalPacienteActivity" />
+
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminMedicosActivity"
+            android:exported="false"
+            android:parentActivityName=".AdminActivity" />
+        <activity
+            android:name=".AdminAgregarMedicoActivity"
+            android:exported="false"
+            android:parentActivityName=".AdminMedicosActivity" />
+        <activity
+            android:name=".AdminPacientesActivity"
+            android:exported="false"
+            android:parentActivityName=".AdminActivity" />
+        <activity
+            android:name=".AdminCrearCitaActivity"
+            android:exported="false"
+            android:parentActivityName=".AdminActivity" />
+        <activity
+            android:name=".AdminGenerarHorariosActivity"
+            android:exported="false"
+            android:parentActivityName=".AdminActivity" />
+
+    </application>
+</manifest>
