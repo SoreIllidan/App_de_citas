@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomNav"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_margin="12dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@drawable/bg_bottom_nav"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/btnNavHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_home_24"
+        android:contentDescription="Inicio"
+        android:tint="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/btnNavCalendar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_calendar_month_24"
+        android:contentDescription="Citas"
+        android:tint="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/btnNavDocs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_description_24"
+        android:contentDescription="Documentos"
+        android:tint="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/btnNavUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_person_24"
+        android:contentDescription="Perfil"
+        android:tint="@android:color/white"/>
+</LinearLayout>

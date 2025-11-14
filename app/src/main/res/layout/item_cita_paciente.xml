@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E5F6F8"
+    android:padding="12dp"
+    android:layout_margin="8dp">
+
+    <!-- Estado -->
+    <TextView
+        android:id="@+id/tvEstadoItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:textSize="14sp" />
+
+    <!-- Nombre del médico -->
+    <TextView
+        android:id="@+id/tvMedicoItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dr.(a) Nombre Apellido"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- ESPECIALIDAD (NUEVO) -->
+    <TextView
+        android:id="@+id/tvEspecialidadItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Especialidad"
+        android:textColor="#2D8CAE"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
+
+    <!-- Fecha y hora -->
+    <TextView
+        android:id="@+id/tvFechaHoraItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2025-11-12 - 09:30"
+        android:textColor="#333333"
+        android:layout_marginTop="4dp" />
+
+    <!-- LUGAR/CONSULTORIO/PISO (NUEVO) -->
+    <TextView
+        android:id="@+id/tvLugarItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultorio 304, Piso 3"
+        android:textColor="#333333"
+        android:layout_marginTop="2dp" />
+
+    <!-- Línea separadora -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCDDDD"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReprogramar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Reprogramar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#3C98B3" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#3C98B3" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Confirmar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2E7D32" />
+    </LinearLayout>
+
+</LinearLayout>

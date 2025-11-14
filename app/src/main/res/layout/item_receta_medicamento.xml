@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="#DFEDF0"
+    android:padding="8dp" android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Medicamento" android:textStyle="bold"/>
+        <ImageButton
+            android:id="@+id/btnDel"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@android:drawable/ic_delete"
+            android:background="@android:color/transparent" android:tint="#C62828"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etMedNombre"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Nombre (ej. Carvedilol)"/>
+
+    <EditText
+        android:id="@+id/etMedDosis"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Dosis (ej. 25 mg)"/>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="4dp">
+        <EditText
+            android:id="@+id/etMedFrecuencia"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:inputType="number"
+            android:hint="Cada (horas)"/>
+        <View android:layout_width="8dp" android:layout_height="0dp"/>
+        <EditText
+            android:id="@+id/etMedDuracion"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:inputType="number"
+            android:hint="Duración (días) opcional"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etMedIndicaciones"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Indicaciones (opcional)"/>
+</LinearLayout>

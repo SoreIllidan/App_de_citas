@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7E0ED"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="31dp" />
+        <!-- Encabezado general -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tvAyuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayuda y soporte"
+                android:textColor="#2D8CAE"
+                android:textStyle="bold"
+                android:paddingTop="12dp"/>
+            <TextView
+                android:id="@+id/tvTituloPerfil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mi Perfil"
+                android:textColor="#22728E"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btnCerrarSesionPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Cerrar Sesión"
+                android:backgroundTint="#469DBC"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Tarjeta: Información Personal -->
+        <LinearLayout
+            android:id="@+id/cardPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF8E2"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:elevation="2dp">
+
+            <!-- Nueva cabecera horizontal con título + botones a la derecha -->
+            <LinearLayout
+                android:id="@+id/llHeaderPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvTituloPersonal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Información Personal"
+                    android:textStyle="bold"
+                    android:textColor="#22728E"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnEditarTodo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginEnd="6dp"
+                        android:text="Editar"
+                        android:backgroundTint="#3C98B3"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnGuardarTodo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="Guardar"
+                        android:enabled="false"
+                        android:backgroundTint="#2E7D32"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNombreCompleto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Nombre:"/>
+
+            <TextView
+                android:id="@+id/tvDni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DNI:"/>
+
+            <EditText
+                android:id="@+id/etCorreoPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:enabled="false"
+                android:textColor="#333333"/>
+
+            <EditText
+                android:id="@+id/etTelefonoPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                android:enabled="false"
+                android:textColor="#333333"/>
+
+            <EditText
+                android:id="@+id/etFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha nacimiento (YYYY-MM-DD)"
+                android:inputType="date"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/etOcupacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ocupación"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <!-- Contacto de Emergencia -->
+        <LinearLayout
+            android:id="@+id/cardEmergencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF8E2"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:elevation="2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contacto de Emergencia"
+                android:textStyle="bold"
+                android:textColor="#22728E"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/etEmergenciaNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre contacto"
+                android:enabled="false"/>
+            <EditText
+                android:id="@+id/etEmergenciaRelacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Relación"
+                android:enabled="false"/>
+            <EditText
+                android:id="@+id/etEmergenciaTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                android:enabled="false"/>
+        </LinearLayout>
+
+        <!-- Información Médica -->
+        <LinearLayout
+            android:id="@+id/cardMedica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF8E2"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:elevation="2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Información Médica"
+                android:textStyle="bold"
+                android:textColor="#22728E"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/etTipoSangre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de sangre (ej. O+)"
+                android:enabled="false"/>
+            <EditText
+                android:id="@+id/etAlergias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alergias"
+                android:enabled="false"/>
+            <EditText
+                android:id="@+id/etHistorialMedico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Historial médico"
+                android:enabled="false"
+                android:inputType="textMultiLine"
+                android:minLines="2"/>
+        </LinearLayout>
+
+        <!-- Seguro Médico -->
+        <LinearLayout
+            android:id="@+id/cardSeguro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF8E2"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:elevation="2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seguro Médico"
+                android:textStyle="bold"
+                android:textColor="#22728E"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/etAseguradora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Aseguradora"
+                android:enabled="false"/>
+            <EditText
+                android:id="@+id/etPoliza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Póliza"
+                android:enabled="false"/>
+        </LinearLayout>
+
+        <!-- Dirección -->
+        <LinearLayout
+            android:id="@+id/cardDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF8E2"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:elevation="2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dirección"
+                android:textStyle="bold"
+                android:textColor="#22728E"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/etDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección completa"
+                android:enabled="false"
+                android:inputType="textMultiLine"
+                android:minLines="2"/>
+
+            <TextView
+                android:id="@+id/tvAyuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayuda y soporte"
+                android:textColor="#2D8CAE"
+                android:textStyle="bold"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+            <!-- coloca este TextView donde quieras que se vea (por ejemplo al final) -->
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

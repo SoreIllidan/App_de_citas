@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7E0ED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="104dp" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            app:srcCompat="@drawable/cat" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_tight_semibold"
+            android:text="Agregar médico"
+            android:textAlignment="center"
+            android:textColor="#2D8DAF"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/etNombreMedico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_tight_semibold"
+            android:hint="Nombre del médico" />
+
+        <EditText
+            android:id="@+id/etEspecialidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_tight_semibold"
+            android:hint="Especialidad" />
+
+        <EditText
+            android:id="@+id/etCorreoMedico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_tight_semibold"
+            android:hint="Correo (opcional)"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etTelefonoMedico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_tight_semibold"
+            android:hint="Teléfono (opcional)"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btnGuardarMedico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#469DBC"
+            android:fontFamily="@font/inter_tight_semibold"
+            android:text="Guardar médico" />
+    </LinearLayout>
+</ScrollView>

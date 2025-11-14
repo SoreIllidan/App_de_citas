@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#B7E0ED" android:orientation="vertical" android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvNombreMedicoSel"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="#22728E" android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etBuscar"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Buscar por nombre, DNI, correo, estado, fecha u hora"
+        android:singleLine="true"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCitasMedico"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

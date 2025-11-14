@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7E0ED"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="161dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        app:srcCompat="@drawable/cat" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:id="@+id/tvAdminTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:fontFamily="@font/inter_tight_semibold"
+        android:text="Panel administrador"
+        android:textAlignment="center"
+        android:textColor="#2D8DAF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdminMedicos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#469DBC"
+            android:fontFamily="@font/inter_tight_semibold"
+            android:text="Médicos" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAdminPacientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#469DBC"
+            android:fontFamily="@font/inter_tight_semibold"
+            android:text="Pacientes" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAdminCrearCita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#469DBC"
+            android:fontFamily="@font/inter_tight_semibold"
+            android:text="Crear Cita" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDashboard"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="#3C98B3"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Dashboard"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</LinearLayout>

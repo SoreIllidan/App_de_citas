@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#B7E0ED">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Medicamentos de la receta" android:textStyle="bold"
+            android:textColor="#22728E" android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/contenedorMedicamentos"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnAgregarMed"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Agregar medicamento" android:backgroundTint="#469DBC"
+            android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnCancelarReceta"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Cancelar"
+                android:backgroundTint="#C62828" android:textColor="@android:color/white"/>
+
+            <View android:layout_width="8dp" android:layout_height="0dp"/>
+
+            <Button
+                android:id="@+id/btnListoReceta"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Listo"
+                android:backgroundTint="#2E7D32" android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

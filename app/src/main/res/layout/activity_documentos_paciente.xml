@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#B7E0ED" android:padding="12dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="178dp"
+        app:srcCompat="@drawable/cat" />
+
+    <TextView
+        android:id="@+id/tvTituloDocs"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Documentos de Citas"
+        android:textColor="#22728E" android:textStyle="bold" android:textSize="20sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDocs"
+        android:layout_width="392dp"
+        android:layout_height="612dp"
+        android:layout_marginTop="1dp" />
+</LinearLayout>
